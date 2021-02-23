@@ -7,22 +7,23 @@ const Subject_TopicSchema = new mongoose.Schema({
   subject : String,
   route : String,
   topic : Array
-})
+});
 
 app.get('/', (req, res) => {
   async function getSubjects(){
-		let Query;
-		try {
-			Query = mongoose.model("Subject_Topic");
-		} catch (error) {
-			Query = mongoose.model("Subject_Topic", Subject_TopicSchema, "Subject_Topic");
-		}
-    var result = [];
-		const info = (await Query.find({}, {"_id" : 0, "subject": 1})).forEach(doc => result.push(doc.subject));
-		res.send(result);
-	}
+    const collection = "Subject_Topic";
+    let Query;
+    try {
+      Query = mongoose.model(collection);
+    } catch (error) {
+      Query = mongoose.model(collection, Subject_TopicSchema, collection);
+    }
+    let result = [];
+    const info = (await Query.find({}, {"_id" : 0, "subject": 1})).forEach(doc => result.push(doc.subject));
+    res.send(result);
+  }
 
-	getSubjects();
+  getSubjects();
 });
 
 module.exports = app;
