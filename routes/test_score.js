@@ -6,9 +6,9 @@ const app = express();
 const Test_ScoreSchema = new mongoose.Schema({
   _id : Number,
   userId : Number,
-  totalMarks : Number,
-  marksObtained : Number,
-  topicWiseScore : Array
+  total : Number,
+  obtained : Number,
+  topicScore : Array
 });
 
 app.get('/:id', (req, res) => {
