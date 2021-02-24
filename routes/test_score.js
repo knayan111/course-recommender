@@ -14,7 +14,6 @@ const Test_ScoreSchema = new mongoose.Schema({
 app.get('/:id', (req, res) => {
   async function getTest_Score(){
     const id = Number(req.params.id), collection = "Test_Score";
-    console.log(typeof id);
     let Query;
     try {
       Query = mongoose.model(collection);
