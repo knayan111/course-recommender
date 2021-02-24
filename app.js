@@ -11,12 +11,10 @@ const topics = require('./routes/topics');
 const test_score = require('./routes/test_score');
 const recommend = require('./routes/recommend');
 
-
-
-mongoose.connect('mongodb+srv://root:root@gateashramcluster-ddwdn.mongodb.net/course-recommender', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://root:root@gateashramcluster-ddwdn.mongodb.net/course-recommender',
+{ useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB!'))
   .catch(err => console.error('Could not connect to MongoDB', err));
-
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -25,14 +23,9 @@ app.use(bodyparser.json());
 app.use(cors());
 app.use(express.json());
 
-//////////////////////////////////////////////////////////////////
-
 app.get("/", (req, res) => {
-    res.send("IT'S WORKING!! BACKEND WITH FRONTEND");
+    res.send("It's working! Backend with frontend.");
 });
-
-////////////////////////////////////////////////////////////////
-
 
 app.use('/subjects', subjects);
 app.use('/topics', topics);
