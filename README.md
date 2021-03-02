@@ -6,7 +6,7 @@ A web app that recommends courses based on test score.
 
 ## Routes
 1. [Home](https://course-recommendation-api.herokuapp.com/ "Home").
-2. [Recommend: id = 1](https://course-recommendation-api.herokuapp.com/1 "Recommend: id = 1").
+2. [Recommend: id = 1](https://course-recommendation-api.herokuapp.com/recommend/1 "Recommend: id = 1").
 3. [Subjects](https://course-recommendation-api.herokuapp.com/subjects "Subjects").
 4. [Test Score: id = 1](https://course-recommendation-api.herokuapp.com/test_score/1 "Test Score: id = 1").
 5. [Topics: subject = algorithms](https://course-recommendation-api.herokuapp.com/topics/algorithms "Topics: subject = algorithms").
