@@ -20,9 +20,9 @@ cd course-recommender
 npm install
 node app.js
 ```
-3. Open [Home](http://127.0.0.1:3000/ "Home").
-4. Open [Recommend: id = 1](http://127.0.0.1:3000/recommend/1 "Recommend: id = 1").
-5. Open [Subjects](http://127.0.0.1:3000/subjects "Subjects").
-6. Open [Test Score: id = 1](http://127.0.0.1:3000/test_score/1 "Test Score: id = 1").
-7. Open [Topics: subject = algorithms](http://127.0.0.1:3000/topics/algorithms "Topics: subject = algorithms").
+3. Open [Home](http://localhost:3000/ "Home").
+4. Open [Recommend: id = 1](http://localhost:3000/recommend/1 "Recommend: id = 1").
+5. Open [Subjects](http://localhost:3000/subjects "Subjects").
+6. Open [Test Score: id = 1](http://localhost:3000/test_score/1 "Test Score: id = 1").
+7. Open [Topics: subject = algorithms](http://localhost:3000/topics/algorithms "Topics: subject = algorithms").
 8. Press 'Ctrl + C' in terminal to stop local host.
